@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "team7-quant"
+version = "0.1.0"
+description = "팀7 자산운용 프로젝트 모듈 1~4 연구용 백테스트 엔진"
+requires-python = ">=3.11"
+dependencies = ["pandas>=2.0", "numpy>=1.26", "scipy>=1.10", "openpyxl>=3.1", "matplotlib>=3.7"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+allocation = ["cvxpy>=1.5", "clarabel>=0.9"]
+parquet = ["pyarrow>=15"]
+
+[project.scripts]
+team7-quant = "team7_quant.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+

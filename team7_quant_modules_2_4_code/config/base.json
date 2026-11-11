@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "timezone": "Asia/Seoul",
+  "universe": {
+    "minimum_listing_months": 12,
+    "liquidity_lookback_sessions": 63,
+    "bottom_percentile_cutoff": 0.20,
+    "financial_lag_months": 4,
+    "kospi_labels": ["KOSPI", "유가증권시장"],
+    "common_share_labels": ["보통주", "COMMON", "common"],
+    "allowed_security_types": ["주권", "주식", "STOCK", "stock"],
+    "required_financial_columns": ["ni_parent", "equity_parent", "cfo", "gross_profit", "total_assets", "total_liabilities"]
+  },
+  "factor": {
+    "profile": "weighted_momentum",
+    "default_weights": {"value": 0.4, "quality": 0.4, "momentum": 0.2},
+    "selected_count": 30,
+    "rebalance_months": [3, 6, 9, 12],
+    "financial_lag_months": 4,
+    "missing_factor_score": 0.5,
+    "momentum_lookback_months": 12,
+    "momentum_skip_months": 1,
+    "unit_error_abs_ratio": 100.0,
+    "ic_start": "2009-01-01",
+    "ic_end": "2015-12-31"
+  },
+  "regime": {
+    "factor_profile": "weighted_momentum",
+    "fixed_momentum_weight": 0.2,
+    "baseline": 100.0,
+    "change_months": 3,
+    "confirmations": 2,
+    "training_years": 7,
+    "min_samples": 12,
+    "neutral_band": 0.001,
+    "allowed_weights": [[0.6, 0.4], [0.5, 0.5], [0.4, 0.6]],
+    "evaluation_start_year": 2016,
+    "evaluation_end_year": 2025
+  }
+}
+
