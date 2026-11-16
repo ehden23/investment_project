@@ -1,0 +1,31 @@
+{
+  "mapped_excel_files": 101,
+  "mapped_product_rows": 202,
+  "files_inside_2016_2025": 99,
+  "files_outside_evaluation_period": [
+    "[KR]+장내파생상품+증거금률 (5).xlsx",
+    "[KR]+장내파생상품+증거금률 (6).xlsx"
+  ],
+  "catalog_months_transcribed": 87,
+  "modern_xlsx_first_inferred_month": "2025-08",
+  "anchor_rate_checks": 8,
+  "remaining_missing_notice_numbers": [],
+  "resolved_notice_55": {
+    "board_number": 55,
+    "notice_title": "장내 파생상품시장 증거금률 수시조정 안내",
+    "registration_date": "2020-03-13",
+    "effective_date": "2020-03-18",
+    "first_collateral_calculation_date": "2020-03-17",
+    "initial_rate": 0.111,
+    "maintenance_rate": 0.074,
+    "source_file": "장내파생상품시장+증거금률+수시조정+결과(200313).pdf",
+    "source_sha256": "8559f7e0d472902f2da616df9f3d36119067159d56a817e1793556db6a4402bd",
+    "timing_evidence": "PDF page 1; prior regular session close",
+    "rate_evidence": "PDF page 2"
+  },
+  "daily_rows": 2452,
+  "unresolved_session_rate_days": 0,
+  "unresolved_eod_rate_days": 0,
+  "date_policy": "User authorized date inference from screenshots/catalog. Sequence-based mappings and rule-based effective dates are labelled inferred. Registration date is distinct from effective and previous-session-close calculation dates.",
+  "readiness": "Prepared rate history with documented date inference; catalog no.55 resolved by original PDF. No missing daily rates. NOT a complete COMS portfolio margin reproduction. No hedge backtest rerun."
+}

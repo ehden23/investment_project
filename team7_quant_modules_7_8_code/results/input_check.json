@@ -1,0 +1,43 @@
+{
+  "ready_for_hedge_backtest": false,
+  "issues": [
+    {
+      "code": "DERIVATIVE_COSTS_REQUIRED",
+      "detail": "미확정 파생 거래비용: option_commission_rate, future_commission_rate, option_slippage_ticks, future_slippage_points, cost_source. risk.cost_file 또는 명시적인 비용을 입력하세요. 0도 명시적으로 입력해야 합니다."
+    },
+    {
+      "code": "UPSTREAM_HEDGE_CASH_REQUIRED",
+      "strategy": "ROTATION_BL",
+      "detail": "최초 헤지 체결일의 가용 현금이 0입니다. 일부 거래불가 잔액과 별개로, 팀원이 헤지 현금을 남긴 NAV·보유·목표비중으로 갱신해야 합니다."
+    },
+    {
+      "code": "UPSTREAM_HEDGE_CASH_REQUIRED",
+      "strategy": "ROTATION_EW",
+      "detail": "최초 헤지 체결일의 가용 현금이 0입니다. 일부 거래불가 잔액과 별개로, 팀원이 헤지 현금을 남긴 NAV·보유·목표비중으로 갱신해야 합니다."
+    },
+    {
+      "code": "UPSTREAM_HEDGE_CASH_REQUIRED",
+      "strategy": "STATIC_BL",
+      "detail": "최초 헤지 체결일의 가용 현금이 0입니다. 일부 거래불가 잔액과 별개로, 팀원이 헤지 현금을 남긴 NAV·보유·목표비중으로 갱신해야 합니다."
+    },
+    {
+      "code": "UPSTREAM_HEDGE_CASH_REQUIRED",
+      "strategy": "STATIC_EW",
+      "detail": "최초 헤지 체결일의 가용 현금이 0입니다. 일부 거래불가 잔액과 별개로, 팀원이 헤지 현금을 남긴 NAV·보유·목표비중으로 갱신해야 합니다."
+    }
+  ],
+  "facts": {
+    "cash_policy": "already included in upstream NAV; no external contribution or equity liquidation",
+    "strategies": [
+      "ROTATION_BL",
+      "ROTATION_EW",
+      "STATIC_BL",
+      "STATIC_EW"
+    ],
+    "feature_rows": 9812,
+    "put_contracts": 121,
+    "futures_contracts": 41,
+    "margin_days": 2452,
+    "dividend_policy": "observed_index_yield"
+  }
+}

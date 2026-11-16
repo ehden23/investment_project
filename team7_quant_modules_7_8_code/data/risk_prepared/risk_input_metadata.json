@@ -1,0 +1,56 @@
+{
+  "inputs": [
+    {
+      "name": "KOSPI200 시가&종가 지수.xlsx",
+      "sha256": "24f30bb9766d598424a449f34ebff0538306f971df05908524c25a616ad1247d"
+    },
+    {
+      "name": "CD금리 201511~202512.31.xlsx",
+      "sha256": "9a5586216933e4dd0627e2876ccf05e8ab89f155b62b296ea8ddf4073311fd75"
+    },
+    {
+      "name": "2016~2025 풋옵션 data.xlsx",
+      "sha256": "716a90678cc3e7cc18e98c6958c207fe91d2422faddf401ba94415583e8da32f"
+    },
+    {
+      "name": "2016~2025 선물 data.xlsx",
+      "sha256": "a5abab4f795c721fc746adb5090a369354d90db93f0027acc209434a9fdee99f"
+    }
+  ],
+  "put_contracts": 121,
+  "futures_contracts": 41,
+  "dividend_units": "percent converted to decimal",
+  "dividend_policy": "observed_index_yield",
+  "execution": "signal at t close; execution at next session close",
+  "multiplier_source": "Daishin/Hanwha 2017-03-27 notice: 500000 -> 250000; outstanding quantities doubled",
+  "multiplier_source_url": "https://money2.daishin.com/html/Notice/2017/grch0321.html",
+  "futures_mark": "observed close, NOT DF10000500 theoretical settlement",
+  "expiry_policy": "second Thursday adjusted by supplied index calendar; last quote cross-check; 2026 maturities right censored",
+  "option_selection": "user-collected monthly put candidates; full historical chain optimality not established",
+  "dividend_definition": "Daily historical KRX index yield; BSM input proxy, not maturity-specific expected dividends.",
+  "margin_policy": "Published standalone futures rate history; date inference flags retained; no COMS offsets.",
+  "margin_missing_rates": 0,
+  "observed_input_sources": [
+    {
+      "name": "KOSPI200배당수익률.zip",
+      "sha256": "b764a82d4cb431595162b542e4db3904f2ffe530329c357c379b7bac09ed41a1"
+    },
+    {
+      "name": "kospi200_future_margin_daily_WITH_FLAGS.csv",
+      "sha256": "f67289ff8c6a78771faa8781286ec1e1c3648a2f71ffcb80e9288dbcc6a1a74a"
+    }
+  ],
+  "resolved_notice_55": {
+    "board_number": 55,
+    "notice_title": "장내 파생상품시장 증거금률 수시조정 안내",
+    "registration_date": "2020-03-13",
+    "effective_date": "2020-03-18",
+    "first_collateral_calculation_date": "2020-03-17",
+    "initial_rate": 0.111,
+    "maintenance_rate": 0.074,
+    "source_file": "장내파생상품시장+증거금률+수시조정+결과(200313).pdf",
+    "source_sha256": "8559f7e0d472902f2da616df9f3d36119067159d56a817e1793556db6a4402bd",
+    "timing_evidence": "PDF page 1; prior regular session close",
+    "rate_evidence": "PDF page 2"
+  }
+}
