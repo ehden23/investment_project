@@ -1,0 +1,155 @@
+{
+  "schema_version": "1.0",
+  "timezone": "Asia/Seoul",
+  "universe": {
+    "minimum_listing_months": 12,
+    "liquidity_lookback_sessions": 63,
+    "bottom_percentile_cutoff": 0.2,
+    "financial_lag_months": 4,
+    "kospi_labels": [
+      "KOSPI",
+      "유가증권시장"
+    ],
+    "common_share_labels": [
+      "보통주",
+      "COMMON",
+      "common"
+    ],
+    "allowed_security_types": [
+      "주권",
+      "주식",
+      "STOCK",
+      "stock"
+    ],
+    "required_financial_columns": [
+      "ni_parent",
+      "equity_parent",
+      "cfo",
+      "gross_profit",
+      "total_assets",
+      "total_liabilities"
+    ]
+  },
+  "factor": {
+    "profile": "weighted_momentum",
+    "default_weights": {
+      "value": 0.4,
+      "quality": 0.4,
+      "momentum": 0.2
+    },
+    "selected_count": 30,
+    "rebalance_months": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "financial_lag_months": 4,
+    "missing_factor_score": 0.5,
+    "momentum_lookback_months": 12,
+    "momentum_skip_months": 1,
+    "unit_error_abs_ratio": 100.0,
+    "ic_start": "2009-01-01",
+    "ic_end": "2015-12-31"
+  },
+  "regime": {
+    "factor_profile": "weighted_momentum",
+    "fixed_momentum_weight": 0.2,
+    "baseline": 100.0,
+    "change_months": 3,
+    "confirmations": 2,
+    "training_years": 7,
+    "min_samples": 12,
+    "neutral_band": 0.001,
+    "allowed_weights": [
+      [
+        0.6,
+        0.4
+      ],
+      [
+        0.5,
+        0.5
+      ],
+      [
+        0.4,
+        0.6
+      ]
+    ],
+    "evaluation_start_year": 2016,
+    "evaluation_end_year": 2025
+  },
+  "allocation": {
+    "selected_count": 30,
+    "lookback_sessions": 252,
+    "min_lookback_sessions": 126,
+    "annual_factor": 252,
+    "top_count": 5,
+    "delta": 2.5,
+    "alpha": 0.03,
+    "tau": 0.025,
+    "max_weight": 0.1
+  },
+  "execution": {
+    "execution_price": "next_session_close",
+    "untradable_rule": "zero_volume_no_retry",
+    "buy_commission": 0.00015,
+    "sell_commission": 0.00015,
+    "sell_tax": 0.002,
+    "slippage_each_side": 0.0005,
+    "min_round_trip_cost": 0.0023
+  },
+  "backtest": {
+    "initial_capital": 10000000000,
+    "first_signal_date": "2015-12-31",
+    "evaluation_start": "2016-01-01",
+    "evaluation_end": "2025-12-31",
+    "static_weights": {
+      "value": 0.4,
+      "quality": 0.4,
+      "momentum": 0.2
+    },
+    "static_rebalance_months": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "price_file": "stock_daily_prices_current_kospi.xlsx",
+    "cache_dir": "data/cache"
+  },
+  "risk": {
+    "drawdown_thresholds": [
+      0.08,
+      0.12,
+      0.15
+    ],
+    "release_thresholds": [
+      0.06,
+      0.1,
+      0.13
+    ],
+    "release_days": 5,
+    "beta_caps": [
+      0.8,
+      0.5,
+      0.2
+    ],
+    "put_coverage": 0.5,
+    "vol_window": 60,
+    "es_window": 252,
+    "es_confidence": 0.95,
+    "option_commission_rate": null,
+    "option_slippage_ticks": null,
+    "future_commission_rate": null,
+    "future_slippage_points": null,
+    "cost_file": null,
+    "cost_source": null,
+    "cash_file": null,
+    "margin_policy": "standalone_futures_no_offsets",
+    "dividend_input_policy": "observed_index_yield",
+    "roll_sessions": 5,
+    "beta_window": 252,
+    "beta_minimum": 126,
+    "put_resize_on_equity_rebalance": true
+  }
+}

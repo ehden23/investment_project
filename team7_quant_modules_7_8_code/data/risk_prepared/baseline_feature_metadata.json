@@ -1,0 +1,14 @@
+{
+  "source": "supplied backtest outputs; unchanged upstream strategy NAV and target weights",
+  "beta_window": 252,
+  "beta_minimum_pairs": 126,
+  "beta_fallback": "1.0 only where paired history is insufficient; counts exported",
+  "stock_codes_used": 244,
+  "baseline_strategies": [
+    "ROTATION_BL",
+    "ROTATION_EW",
+    "STATIC_BL",
+    "STATIC_EW"
+  ],
+  "survivorship_bias": "UNRESOLVED: source equity panel contains current KOSPI constituents"
+}

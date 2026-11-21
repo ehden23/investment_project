@@ -1,0 +1,24 @@
+{
+  "test_count": 45,
+  "tests_passed": true,
+  "upstream_implementation_sha256_unchanged": {
+    "src/team7_quant/module1.py": "d3ba970a6b08cf7278fc84cc1dd1e7a84517ddcf4014237cec21a1643cdf6434",
+    "src/team7_quant/module2.py": "e208748e65dc3adb2dcce85d584c7c7a0a3370a2b3686ff882bbeea08fdf75d7",
+    "src/team7_quant/module34.py": "9c11bf5f98b0c710b8f5c7be4bf676efd84efbf7b4a072aa0167f24c72cc6663",
+    "src/team7_quant/module5.py": "e529e3e13926b1b89fcef44f7d1d21b2c78aec141cc123d9c6fa9f800678a3cc",
+    "src/team7_quant/module6.py": "f5aae79896d6fedd707dead8f2b1260d8f3c2f517100fb907e42ac6970c6a14e",
+    "src/team7_quant/backtest.py": "29de49037721b3f3f46065eef07c321081752aed4bbd400692933efa90a74489",
+    "src/team7_quant/daily_panel.py": "d3d27fabfe3f457780ce4aba7275eccd35aecb73c90d82265c89f43e619f705f",
+    "src/team7_quant/pipeline24.py": "09b69f815819142f5d0ff23ec476d724d7ffd057a629137763ede1cfd85bc4ae"
+  },
+  "baseline_rows_reconciled": 9812,
+  "baseline_nav_max_abs_difference": 3.814697265625e-06,
+  "max_self_financing_error": 0.0,
+  "report_status": "BASELINE_ONLY_NO_HEDGE_EVALUATION",
+  "hedge_backtest_completed": false,
+  "remaining_inputs": [
+    "Updated upstream NAV/holdings/target weights reserving hedge cash",
+    "Explicit derivative commissions/slippage with source"
+  ],
+  "original_stock_implementation_modified": false
+}

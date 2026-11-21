@@ -1,0 +1,53 @@
+test_previous_day_cap_weighting_by_hand (test_backtest.BenchmarkProxyTests.test_previous_day_cap_weighting_by_hand) ... ok
+test_signal_on_holiday_executes_next_session (test_backtest.CalendarTests.test_signal_on_holiday_executes_next_session) ... ok
+test_round_trip_cost_floor (test_backtest.ConfigTests.test_round_trip_cost_floor) ... ok
+test_constant_prices_lose_exactly_the_costs (test_backtest.NavConservationTests.test_constant_prices_lose_exactly_the_costs) ... ok
+test_post_trade_nav_equals_pre_trade_nav_minus_cost (test_backtest.NavConservationTests.test_post_trade_nav_equals_pre_trade_nav_minus_cost) ... ok
+test_zero_volume_stock_is_not_traded_and_logged (test_backtest.NavConservationTests.test_zero_volume_stock_is_not_traded_and_logged) ... ok
+test_nav_path_unchanged_before_perturbation (test_backtest.NoLookaheadTests.test_nav_path_unchanged_before_perturbation) ... ok
+test_targets_unchanged_when_future_prices_change (test_backtest.NoLookaheadTests.test_targets_unchanged_when_future_prices_change) ... ok
+test_trades_execute_on_next_session (test_backtest.NoLookaheadTests.test_trades_execute_on_next_session) ... ok
+test_full_history_weights_sum_to_one (test_backtest.TargetWeightTests.test_full_history_weights_sum_to_one) ... ok
+test_short_history_shortens_lookback (test_backtest.TargetWeightTests.test_short_history_shortens_lookback) ... ok
+test_too_short_history_falls_back_to_equal_weight (test_backtest.TargetWeightTests.test_too_short_history_falls_back_to_equal_weight) ... ok
+test_filters_bottom_twenty_percent (test_module1.Module1Tests.test_filters_bottom_twenty_percent) ... ok
+test_future_delisting_does_not_remove_past_stock (test_module1.Module1Tests.test_future_delisting_does_not_remove_past_stock) ... ok
+test_financial_lag_and_selection (test_module2.Module2Tests.test_financial_lag_and_selection) ... ok
+test_invalid_momentum_weight (test_module2.Module2Tests.test_invalid_momentum_weight) ... ok
+test_percentile_bounds (test_module2.Module2Tests.test_percentile_bounds) ... ok
+test_four_regimes (test_module34.Module34Tests.test_four_regimes) ... ok
+test_two_confirmations (test_module34.Module34Tests.test_two_confirmations) ... ok
+test_weight_adapter_keeps_momentum_at_twenty_percent (test_module34.Module34Tests.test_weight_adapter_keeps_momentum_at_twenty_percent) ... ok
+test_beta_uses_only_past_prices (test_risk_overlay.CausalityTests.test_beta_uses_only_past_prices) ... ok
+test_daily_dividend_is_observed_not_a_yearly_lag (test_risk_overlay.CausalityTests.test_daily_dividend_is_observed_not_a_yearly_lag) ... ok
+test_future_quotes_do_not_change_past_nav_or_orders (test_risk_overlay.CausalityTests.test_future_quotes_do_not_change_past_nav_or_orders) ... ok
+test_three_modes_write_reports_with_cash_accounting (test_risk_overlay.EndToEndEvaluationTests.test_three_modes_write_reports_with_cash_accounting) ... STATIC_EW: NO_HEDGE
+STATIC_EW: PUT_ONLY
+STATIC_EW: PUT_FUTURES
+ok
+test_cash_pool_cannot_add_external_money (test_risk_overlay.ExplicitInputTests.test_cash_pool_cannot_add_external_money) ... ok
+test_consumed_cash_is_not_replenished_next_day (test_risk_overlay.ExplicitInputTests.test_consumed_cash_is_not_replenished_next_day) ... ok
+test_cost_schedule_cannot_backfill_from_future (test_risk_overlay.ExplicitInputTests.test_cost_schedule_cannot_backfill_from_future) ... ok
+test_expiry_has_no_invented_settlement_fallback (test_risk_overlay.ExplicitInputTests.test_expiry_has_no_invented_settlement_fallback) ... ok
+test_explicit_zero_costs_are_allowed (test_risk_overlay.ExplicitInputTests.test_explicit_zero_costs_are_allowed) ... ok
+test_missing_costs_do_not_become_zero (test_risk_overlay.ExplicitInputTests.test_missing_costs_do_not_become_zero) ... ok
+test_old_fixed_margin_override_is_rejected (test_risk_overlay.ExplicitInputTests.test_old_fixed_margin_override_is_rejected) ... ok
+test_proportional_funding_is_rejected (test_risk_overlay.ExplicitInputTests.test_proportional_funding_is_rejected) ... ok
+test_upstream_cannot_reuse_money_paid_as_option_premium (test_risk_overlay.ExplicitInputTests.test_upstream_cannot_reuse_money_paid_as_option_premium) ... ok
+test_contract_split_has_no_free_pnl (test_risk_overlay.FundingAndAccountingTests.test_contract_split_has_no_free_pnl) ... ok
+test_flat_market_loses_only_explicit_costs (test_risk_overlay.FundingAndAccountingTests.test_flat_market_loses_only_explicit_costs) ... ok
+test_no_hedge_exactly_preserves_upstream_nav (test_risk_overlay.FundingAndAccountingTests.test_no_hedge_exactly_preserves_upstream_nav) ... ok
+test_no_hedge_preserves_the_cash_path (test_risk_overlay.FundingAndAccountingTests.test_no_hedge_preserves_the_cash_path) ... ok
+test_same_size_roll_closes_old_contract (test_risk_overlay.FundingAndAccountingTests.test_same_size_roll_closes_old_contract) ... ok
+test_short_futures_gain_is_daily_cash_not_notional (test_risk_overlay.FundingAndAccountingTests.test_short_futures_gain_is_daily_cash_not_notional) ... ok
+test_strict_does_not_invent_funding_or_sell_upstream (test_risk_overlay.FundingAndAccountingTests.test_strict_does_not_invent_funding_or_sell_upstream) ... ok
+test_future_margin_change_does_not_change_past_trades (test_risk_overlay.HistoricalMarginTests.test_future_margin_change_does_not_change_past_trades) ... ok
+test_maintenance_breach_queues_reduction_next_session (test_risk_overlay.HistoricalMarginTests.test_maintenance_breach_queues_reduction_next_session) ... ok
+test_margin_change_uses_published_history_and_is_not_an_expense (test_risk_overlay.HistoricalMarginTests.test_margin_change_uses_published_history_and_is_not_an_expense) ... ok
+test_prepared_march_2020_boundary_matches_original_notice (test_risk_overlay.HistoricalMarginTests.test_prepared_march_2020_boundary_matches_original_notice) ... ok
+test_cd_accrual_uses_previous_quote_and_calendar_days (test_risk_overlay.PerformanceTests.test_cd_accrual_uses_previous_quote_and_calendar_days) ... ok
+
+----------------------------------------------------------------------
+Ran 45 tests in 4.728s
+
+OK

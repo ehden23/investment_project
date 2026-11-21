@@ -1,0 +1,36 @@
+{
+  "benchmark_note": "BENCHMARK_PROXY_CAPW는 공식 KOSPI 지수가 아니다. 주가 패널 933종목(현재 KOSPI 구성종목)의 전일 시가총액 가중 가격수익률 지수로 만든 대용치이며, 전략과 같은 생존편향·배당 미반영 조건이다.",
+  "comparison_caveat": "정적 전략은 분기말에만, 로테이션 전략은 분기말과 국면 전환 달에 리밸런싱하므로 두 계열의 성과 차이에는 가중치 효과와 리밸런싱 횟수 차이가 섞여 있다.",
+  "rebalance_counts": {
+    "STATIC_EW": 40,
+    "STATIC_BL": 40,
+    "ROTATION_EW": 53,
+    "ROTATION_BL": 53
+  },
+  "execution": "신호=월말(마지막 거래일 종가까지), 체결=다음 거래일 종가, 거래량 0 종목 체결 불가(재시도 없음)",
+  "round_trip_cost": 0.0033,
+  "cash_rate": 0.0,
+  "pipeline_reproduction_check": {
+    "common_dates": 53,
+    "mismatched_dates": []
+  },
+  "allocation_status_counts": [
+    {
+      "family": "ROTATION",
+      "bl_status": "OK",
+      "n": 54
+    },
+    {
+      "family": "STATIC",
+      "bl_status": "OK",
+      "n": 41
+    }
+  ],
+  "limitations": [
+    "현재 KOSPI 구성종목만 포함되어 상장폐지 종목이 빠진 생존편향이 있다(수정하지 않음).",
+    "시가 자료가 없어 다음 거래일 종가로 체결한다.",
+    "벤치마크·무위험수익률 자료가 없어 초과수익·샤프비율을 계산하지 않았고 현금 이자는 0이다.",
+    "거래비용은 고정 비율이며 연도별 증권거래세 변화는 반영하지 않았다.",
+    "수정주가는 현금배당 미반영(가격수익률)이므로 전략·벤치마크 대용치 모두 배당만큼 총수익률보다 낮다."
+  ]
+}
