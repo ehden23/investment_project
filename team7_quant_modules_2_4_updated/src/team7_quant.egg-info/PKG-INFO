@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: team7-quant
+Version: 0.1.0
+Summary: 팀7 자산운용 프로젝트 모듈 1~4 연구용 백테스트 엔진
+Requires-Python: >=3.11
+Requires-Dist: pandas>=2.0
+Requires-Dist: numpy>=1.26
+Requires-Dist: scipy>=1.10
+Requires-Dist: openpyxl>=3.1
+Requires-Dist: matplotlib>=3.7
+Provides-Extra: dev
+Requires-Dist: pytest>=8; extra == "dev"
+Requires-Dist: ruff>=0.6; extra == "dev"
+Provides-Extra: allocation
+Requires-Dist: cvxpy>=1.5; extra == "allocation"
+Requires-Dist: clarabel>=0.9; extra == "allocation"
+Provides-Extra: parquet
+Requires-Dist: pyarrow>=15; extra == "parquet"

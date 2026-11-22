@@ -1,0 +1,2 @@
+[console_scripts]
+team7-quant = team7_quant.cli:main

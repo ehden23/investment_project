@@ -1,0 +1,16 @@
+pandas>=2.0
+numpy>=1.26
+scipy>=1.10
+openpyxl>=3.1
+matplotlib>=3.7
+
+[allocation]
+cvxpy>=1.5
+clarabel>=0.9
+
+[dev]
+pytest>=8
+ruff>=0.6
+
+[parquet]
+pyarrow>=15
